@@ -8,6 +8,14 @@
       <mat-icon>schedule</mat-icon>
       Pendentes: {{totalDePendentes}}
     </h2>
+    <h2 class="container mat-elevation-z8 total concluidos">
+      <mat-icon>schedule</mat-icon>
+      Concluidos: {{totalDeConcluidos}}
+    </h2>
+    <h2 class="container mat-elevation-z8 total fazendo">
+      <mat-icon>schedule</mat-icon>
+      Fazendo: {{totalDeFazendo}}
+    </h2>
   </section>
   <div *ngFor="let tarefa of tarefas">
     <mat-expansion-panel>
@@ -23,6 +31,7 @@
         <mat-chip-option (click)="alterarSituacao(tarefa, 'Pendente')" selected>A Fazer</mat-chip-option>
         <mat-chip-option (click)="alterarSituacao(tarefa, 'Fazendo')">Fazendo</mat-chip-option>
         <mat-chip-option (click)="alterarSituacao(tarefa, 'Concluido')">Concluido</mat-chip-option>
+        <mat-chip-option (click)="alterarSituacao(tarefa, 'Fazendo')">Fazendo</mat-chip-option>
       </mat-chip-listbox>
     </mat-expansion-panel>
   </div>

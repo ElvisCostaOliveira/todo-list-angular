@@ -35,3 +35,9 @@ section {
 .pendentes {
     background-color: #fef57f;
 }
+.concluidos {
+    background-color: #ff6961;
+}
+.fazendo {
+    background-color: #90ee90;
+}
